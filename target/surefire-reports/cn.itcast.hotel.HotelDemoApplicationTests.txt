@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: cn.itcast.hotel.HotelDemoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 10.312 s <<< FAILURE! - in cn.itcast.hotel.HotelDemoApplicationTests
+contextLoads  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'elasticsearchRestHighLevelClient' defined in class path resource [org/springframework/boot/autoconfigure/elasticsearch/ElasticsearchRestClientConfigurations$RestHighLevelClientConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestHighLevelClient]: Factory method 'elasticsearchRestHighLevelClient' threw exception; nested exception is java.lang.NoSuchFieldError: IGNORE_DEPRECATIONS
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.RestHighLevelClient]: Factory method 'elasticsearchRestHighLevelClient' threw exception; nested exception is java.lang.NoSuchFieldError: IGNORE_DEPRECATIONS
+Caused by: java.lang.NoSuchFieldError: IGNORE_DEPRECATIONS
+

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: cn.itcast.hotel.HotelIndexTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.008 s <<< FAILURE! - in cn.itcast.hotel.HotelIndexTest
+test  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoClassDefFoundError: Could not initialize class org.elasticsearch.client.RestHighLevelClient
+	at cn.itcast.hotel.HotelIndexTest.setup(HotelIndexTest.java:21)
+
